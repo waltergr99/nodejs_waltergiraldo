@@ -1,0 +1,16 @@
+.coaster-card {
+
+    box-shadow: 0 4px 5px  rgba(0,0,0.2);
+  display:inline-block ;
+  border-radius: 5px; 
+  width: 300px ;
+  margin: 3%;
+}
+
+.coaster-card img {
+    margin-block-end: 50%;
+    width: 80%;
+    height: 50%;
+    margin: 30px;
+    object-fit: cover;
+}
