@@ -5,7 +5,7 @@ const app = express()
 // Conexion a la Base de Datos 
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://walter:walter123@cluster0.2rfwl.mongodb.net/garaje-live-coding')
+mongoose.connect('mongodb+srv://admin123:SSI1f4rvc0Jvxwq8@cluster0.2rfwl.mongodb.net/garaje-live-coding')
 
 .then(() => console.log('CONECTADO A LA BD'))
 

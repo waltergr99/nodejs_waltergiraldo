@@ -4,12 +4,16 @@ import "./CoastersPage.css"
 const CoastersPage = () => {
 
     const [coasters,setCoasters] = useState([])
+    
 
-    const loadCoasters = () => {
+    const loadCoasters = () => { 
+
+        //var mi_objeto = []
 
         fetch('http://localhost:5005/api/coasters')
         .then(res => res.json())
         .then(allCoasters =>setCoasters(allCoasters))
+        //localStorage.setItem("coasters",JSON.parse(mi_objeto))
     }
     loadCoasters()
     return (
@@ -25,6 +29,7 @@ const CoastersPage = () => {
                     <article className="coaster-card">
                         <img src={eachCoaster.imageUrl}></img>
                         <h1>{eachCoaster.title}</h1>
+                        <button>X</button>
                     </article>
                     </Link>
 
@@ -35,5 +40,14 @@ const CoastersPage = () => {
         </main>
     )
 }
+
+ //const eliminar = () => {
+
+  //      const er = "" 
+        
+    //    {   };
+
+
+
 
 export default CoastersPage
